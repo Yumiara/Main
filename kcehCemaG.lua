@@ -1,7 +1,9 @@
 getgenv().ScriptName = nil
 getgenv().FinishLoad = nil
 getgenv().TextStatus = "???"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Asset/main/esitrevda"))()
+if not getgenv().Premium then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Asset/main/esitrevda"))()
+end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Asset/main/redaol"))()
 repeat task.wait() until game.CoreGui:FindFirstChild("Loader") and not game.CoreGui:FindFirstChild("Advertising")
 getgenv().FinishLoad = nil
