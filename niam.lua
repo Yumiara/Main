@@ -1,0 +1,5 @@
+repeat task.wait() until game:IsLoaded()
+coroutine.wrap(function()
+    game:GetService("ReplicatedStorage"):WaitForChild("Sampling"):Destroy()
+end)()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Main/main/metsys_yek.lua"))()
