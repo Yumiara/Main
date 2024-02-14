@@ -1,5 +1,6 @@
 getgenv().ScriptName = nil
 getgenv().FinishLoad = nil
+getgenv().TextStatus = "???"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Asset/main/esitrevda"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Asset/main/redaol"))()
 repeat task.wait() until game.CoreGui:FindFirstChild("Loader") and not game.CoreGui:FindFirstChild("Advertising")
