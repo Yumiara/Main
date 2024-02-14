@@ -48,13 +48,15 @@ until getgenv().ScriptName ~= nil
 
 task.wait()
 
-if getgenv().ScriptName == "The Mimic" then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/TheMimic.lua"))()
-elseif getgenv().ScriptName == "Dragon Adventure" then
-    --loadstring
-else
-    --loadstring
-end
+coroutine.wrap(function()
+    if getgenv().ScriptName == "The Mimic" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/TheMimic.lua"))()
+    elseif getgenv().ScriptName == "Dragon Adventure" then
+        --loadstring
+    else
+        --loadstring
+    end
+end)()
 
 repeat
     if Num < 0.97 then
