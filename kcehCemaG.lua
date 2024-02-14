@@ -39,13 +39,6 @@ if placeId == 3475397644 or placeId == 5391312853 or placeId == 3752680052 or pl
     getgenv().ScriptName = "Dragon Adventure" --Normal World
 end
 task.wait()
-if getgenv().ScriptName == "The Mimic" then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/TheMimic.lua"))()
-elseif getgenv().ScriptName == "Dragon Adventure" then
-    --loadstring
-else
-    --loadstring
-end
 
 repeat
     Front.Size = UDim2.new(0.03, 0, 0.015, 0)
@@ -54,6 +47,14 @@ repeat
 until getgenv().ScriptName ~= nil
 
 task.wait()
+
+if getgenv().ScriptName == "The Mimic" then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/TheMimic.lua"))()
+elseif getgenv().ScriptName == "Dragon Adventure" then
+    --loadstring
+else
+    --loadstring
+end
 
 repeat
     if Num < 0.97 then
@@ -64,6 +65,7 @@ repeat
     task.wait()
 until getgenv().FinishLoad ~= nil
 
+task.wait()
 
 Status.Text = "Finish"
 Front.Size = UDim2.new(0.98, 0, 0.015, 0)
