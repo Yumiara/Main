@@ -34,12 +34,10 @@ end
 wait()
 if placeId == 3475397644 or placeId == 5391312853 or placeId == 3752680052 or placeId == 4174118306 or placeId == 3475419198 or placeId == 3475422608 or placeId == 4601778915 or placeId == 4869039553 or placeId == 5777228223 or placeId == 3623549100 or placeId == 3737848045 or placeId == 3487210751 or placeId == 4728805070 or placeId == 5777228223 then
     getgenv().ScriptName = "Dragon Adventure" --Normal World
-else
-    getgenv().ScriptName = "Universal"
 end
 task.wait()
 if getgenv().ScriptName == "The Mimic" then
-    --loadstring
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/TheMimic.lua"))()
 elseif getgenv().ScriptName == "Dragon Adventure" then
     --loadstring
 else
@@ -57,7 +55,7 @@ task.wait()
 repeat
     if Num < 0.97 then
         Num = Num + 0.01
-        Status.Text = "Loading Ui & Script"
+        Status.Text = getgenv().TextStatus
         Front.Size = UDim2.new(Num, 0, 0.015, 0)
     end
     task.wait()
@@ -68,6 +66,8 @@ Status.Text = "Finish"
 Front.Size = UDim2.new(0.98, 0, 0.015, 0)
 task.wait(0.5)
 game.CoreGui:FindFirstChild("Loader"):Destroy()
+
+task.wait(0.5)
 
 coroutine.wrap(function()
     game.CoreGui:FindFirstChild("TTJY HUB MAIN").Enabled = true
