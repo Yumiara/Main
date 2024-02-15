@@ -23,6 +23,8 @@ elseif placeId == 8056702588 then
     getgenv().ScriptName = "The Mimic" --b2c1
 elseif placeId == 13489800654 then
     getgenv().ScriptName = "The Mimic" --b2c2
+elseif placeId == 15962819441 then
+    getgenv().ScriptName = "The Mimic" --b2c3
 elseif placeId == 7068738088 or placeId == 7068951438 or placeId == 7068739000 or placeId == 7068951914 or placeId == 7068740106 or placeId == 7068952294 then
     getgenv().ScriptName = "The Mimic" --twt
 elseif placeId == 8311299084 or placeId == 8311302084 then
@@ -33,6 +35,8 @@ elseif placeId == 11126398230 then
     getgenv().ScriptName = "The Mimic" --nightmarecircus
 elseif placeId == 7618863566 then
     getgenv().ScriptName = "The Mimic" --jigoku
+elseif placeId == 6243699076 then
+    getgenv().ScriptName = "The Mimic" --lobby
 end
 wait()
 if placeId == 3475397644 or placeId == 5391312853 or placeId == 3752680052 or placeId == 4174118306 or placeId == 3475419198 or placeId == 3475422608 or placeId == 4601778915 or placeId == 4869039553 or placeId == 5777228223 or placeId == 3623549100 or placeId == 3737848045 or placeId == 3487210751 or placeId == 4728805070 or placeId == 5777228223 then
