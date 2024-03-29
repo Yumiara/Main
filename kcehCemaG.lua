@@ -42,6 +42,10 @@ wait()
 if placeId == 3475397644 or placeId == 5391312853 or placeId == 3752680052 or placeId == 4174118306 or placeId == 3475419198 or placeId == 3475422608 or placeId == 4601778915 or placeId == 4869039553 or placeId == 5777228223 or placeId == 3623549100 or placeId == 3737848045 or placeId == 3487210751 or placeId == 4728805070 or placeId == 5777228223 then
     getgenv().ScriptName = "Dragon Adventure" --Normal World
 end
+wait()
+if placeId == 16556777270 then
+    getgenv().ScriptName = "HEDE RNG"
+end
 task.wait()
 
 repeat
@@ -57,6 +61,8 @@ coroutine.wrap(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/TheMimic.lua"))()
     elseif getgenv().ScriptName == "Dragon Adventure" then
         --loadstring
+    elseif getgenv().ScriptName == "HEDE RNG" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/Hade's%20RNG.lua"))()
     else
         --loadstring
     end
