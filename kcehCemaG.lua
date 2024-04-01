@@ -46,6 +46,10 @@ wait()
 if placeId == 16556777270 then
     getgenv().ScriptName = "HEDE RNG"
 end
+wait()
+if placeId == 15532962292 then
+    getgenv().ScriptName = "SOL RNG"
+end
 task.wait()
 
 repeat
@@ -63,6 +67,8 @@ coroutine.wrap(function()
         --loadstring
     elseif getgenv().ScriptName == "HEDE RNG" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/Hade's%20RNG.lua"))()
+    elseif getgenv().ScriptName == "SOL RNG" then
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/Sol's%20RNG"))()  
     else
         --loadstring
     end
