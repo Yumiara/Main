@@ -86,7 +86,8 @@ repeat
         Status.Text = getgenv().TextStatus
         Front.Size = UDim2.new(Num, 0, 0.015, 0)
     end
-    task.wait()
+    task.wait(0.2)
+    Status.Text = "Almost Finish"
 until getgenv().FinishLoad ~= nil
 
 task.wait()
