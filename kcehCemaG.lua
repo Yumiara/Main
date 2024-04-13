@@ -63,7 +63,7 @@ repeat
 until getgenv().ScriptName ~= nil
 
 task.wait()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Asset/main/ytiruceS.lua"))()
 coroutine.wrap(function()
     if getgenv().ScriptName == "The Mimic" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/TheMimic.lua"))()
