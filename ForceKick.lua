@@ -1,1 +1,1 @@
-getgenv().ForceKick = true
+getgenv().ForceKick = false
