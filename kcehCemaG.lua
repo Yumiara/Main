@@ -1,3 +1,14 @@
+coroutine.wrap(function()
+    repeat task.wait() until getgenv().ForceKick == true
+    game.Players.LocalPlayer:Kick("Force Kick | Security Updated")
+end)()
+coroutine.wrap(function()
+    repeat
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Main/main/ForceKick.lua"))()
+        task.wait(5)
+    until false
+end)()
+
 getgenv().ScriptName = nil
 getgenv().FinishLoad = nil
 getgenv().TextStatus = "???"
