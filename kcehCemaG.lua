@@ -68,7 +68,7 @@ coroutine.wrap(function()
     if getgenv().ScriptName == "The Mimic" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/TheMimic.lua"))()
     elseif getgenv().ScriptName == "Dragon Adventure" then
-        --loadstring
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/DragonAdventure.lua"))()
     elseif getgenv().ScriptName == "HEDE RNG" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/Hade's%20RNG.lua"))()
     elseif getgenv().ScriptName == "SOL RNG" then
