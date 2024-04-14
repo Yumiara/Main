@@ -76,7 +76,8 @@ coroutine.wrap(function()
     elseif getgenv().ScriptName == "BABFT" then
           loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/BABFT.lua"))()
     else
-        --loadstring
+        setclipboard(game.PlaceId)
+        game.Players.LocalPlayer:Kick("If you are sure that this game support the script, @ttjy in #genral in discord server. \n also ctrl+v or paste the PlaceId in general")
     end
 end)()
 
