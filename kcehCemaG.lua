@@ -69,6 +69,10 @@ wait()
 if placeId == 16524008257 then
     getgenv().ScriptName = "Anime RNG"
 end
+wait()
+if placeId == 16778527574 then
+    getgenv().ScriptName = "Anime Rarity"
+end
 task.wait()
 
 repeat
@@ -92,6 +96,8 @@ coroutine.wrap(function()
           loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/BABFT.lua"))()
     elseif getgenv().ScriptName == "Anime RNG" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/Anime%20RNG.lua"))()
+    elseif getgenv().ScriptName == "Anime Rarity" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/AnimeRarity.lua"))()
     else
         setclipboard(game.PlaceId)
         game.Players.LocalPlayer:Kick("If you are sure that this game support the script, @ttjy in #genral in discord server. \n also ctrl+v or paste the PlaceId in general")
