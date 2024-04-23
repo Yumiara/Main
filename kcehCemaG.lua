@@ -8,7 +8,6 @@ coroutine.wrap(function()
         task.wait(5)
     until false
 end)()
-
 getgenv().ScriptName = nil
 getgenv().FinishLoad = nil
 getgenv().TextStatus = "???"
