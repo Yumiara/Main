@@ -80,6 +80,10 @@ wait()
 if placeId == 16256372659 or placeId == 16228316919 or placeId == 16942077161 then
     getgenv().ScriptName = "Stock Up"
 end
+wait()
+if placeId == 893973440 then
+    getgenv().ScriptName = "FTF"
+end
 task.wait()
 
 repeat
@@ -109,6 +113,8 @@ coroutine.wrap(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/AnimeRoulette.lua"))() 
     elseif getgenv().ScriptName == "Stock Up" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/StockUp.lua"))()
+    elseif getgenv().ScriptName == "FTF" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/FTF.lua"))()
     else
         setclipboard(game.PlaceId)
         game.Players.LocalPlayer:Kick("If you are sure that this game support the script, @ttjy in #genral in discord server. \n also ctrl+v or paste the PlaceId in general")
