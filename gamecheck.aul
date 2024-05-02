@@ -1,0 +1,67 @@
+coroutine.wrap(function()
+    repeat task.wait() until getgenv().ForceKick == true
+    game.Players.LocalPlayer:Kick("Force Kick | Security Updated")
+end)()
+coroutine.wrap(function()
+    repeat
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Main/main/ForceKick.lua"))()
+        task.wait(5)
+    until false
+end)()
+getgenv().ScriptName = nil
+getgenv().FinishLoad = nil
+getgenv().TextStatus = "???"
+if not getgenv().Premium then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Asset/main/esitrevda"))()
+end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Asset/main/redaol"))()
+repeat task.wait() until game.CoreGui:FindFirstChild("Loader") and not game.CoreGui:FindFirstChild("Advertising")
+getgenv().FinishLoad = nil
+local Front = game.CoreGui:FindFirstChild("Loader"):WaitForChild("Frame"):WaitForChild("Frontground")
+local Status = game.CoreGui:FindFirstChild("Loader"):WaitForChild("Frame"):WaitForChild("Status")
+local Num = 0.06
+local placeId = game.PlaceId
+if placeId == 893973440 then
+    getgenv().ScriptName = "Blade Ball"
+end
+task.wait()
+
+repeat
+    Front.Size = UDim2.new(0.03, 0, 0.015, 0)
+    Status.Text = "Getting map name"
+    task.wait()
+until getgenv().ScriptName ~= nil
+
+task.wait()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Asset/main/ytiruceS.lua"))()
+coroutine.wrap(function()
+    if getgenv().ScriptName == "Blade Ball" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/bladeball.lua"))()
+    else
+        setclipboard(game.PlaceId)
+        game.Players.LocalPlayer:Kick("If you are sure that this game support the script, @ttjy in #genral in discord server. \n also ctrl+v or paste the PlaceId in general")
+    end
+end)()
+
+repeat
+    if Num < 0.97 then
+        Num = Num + 0.01
+        Status.Text = getgenv().TextStatus
+        Front.Size = UDim2.new(Num, 0, 0.015, 0)
+    end
+    task.wait(0.2)
+    Status.Text = "Almost Finish"
+until getgenv().FinishLoad ~= nil
+
+task.wait()
+
+Status.Text = "Finish"
+Front.Size = UDim2.new(0.98, 0, 0.015, 0)
+task.wait(0.5)
+game.CoreGui:FindFirstChild("Loader"):Destroy()
+
+task.wait(0.5)
+
+coroutine.wrap(function()
+    game.CoreGui:FindFirstChild("TTJY HUB MAIN").Enabled = true
+end)()
