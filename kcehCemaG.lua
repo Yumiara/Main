@@ -1,3 +1,4 @@
+print("crack me if you can")
 coroutine.wrap(function()
     repeat task.wait() until getgenv().ForceKick == true
     game.Players.LocalPlayer:Kick("Force Kick | Security Updated")
