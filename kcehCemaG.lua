@@ -85,6 +85,10 @@ wait()
 if placeId == 893973440 then
     getgenv().ScriptName = "FTF"
 end
+wait()
+if placeId == 15214140740 then
+    getgenv().ScriptName = "UTS"
+end
 task.wait()
 
 repeat
@@ -116,6 +120,8 @@ coroutine.wrap(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/StockUp.lua"))()
     elseif getgenv().ScriptName == "FTF" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/FTF.lua"))()
+    elseif getgenv().ScriptName == "UTS" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Yumiara/Script/main/UTS"))()
     else
         setclipboard(game.PlaceId)
         game.Players.LocalPlayer:Kick("If you are sure that this game support the script, @ttjy in #genral in discord server. \n also ctrl+v or paste the PlaceId in general")
